@@ -125,7 +125,8 @@ unset ($placesFile);
 
 if ($cAPI === 1) {
 	//return pretty JSON with driver details
-	echo "<pre>" . stripslashes (json_encode($drivers, JSON_PRETTY_PRINT)) . "</pre>";
+	//echo "<pre>" . stripslashes (json_encode($drivers, JSON_PRETTY_PRINT)) . "</pre>";
+	echo stripslashes (json_encode($drivers, JSON_PRETTY_PRINT));
 }
 
 exit ();
